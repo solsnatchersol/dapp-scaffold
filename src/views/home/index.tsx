@@ -48,6 +48,16 @@ return (
         <div className="flex flex-col mt-2 w-full">
           
           <CandyMint />
+
+<h4 className="text-2xl text-slate-300 mt-4 mb-2">
+            
+              <div className="flex flex-row justify-center">
+                <span className='text-slate-600'>Price:&nbsp;</span>
+                <span> 0.1 SOL</span>
+              </div>
+            
+          </h4>
+          
           <h4 className="text-2xl text-slate-300 mt-4 mb-2">
             {wallet && (
               <div className="flex flex-row justify-center">
