@@ -31,24 +31,16 @@ export const HomeView: FC = ({ }) => {
     <>
       <style>
         {`
-          @keyframes pulseBorder {
-            0%, 100% {
-              background-image: linear-gradient(to right, #9D50BB, #6E48AA);
-            }
-            50% {
-              background-image: linear-gradient(to right, #B485B7, #8C6EA8);
-            }
-          }
           .custom-gradient-border {
-            animation: pulseBorder 2s infinite;
-            padding: 4px; // Reduced padding for a thinner border
-            border-radius: 8px; // Consistent rounded corners
+            background: linear-gradient(to right, #9D50BB, #6E48AA);
+            padding: 8px; // Adjusted padding
+            border-radius: 8px; // Ensuring outer container also has rounded corners
             overflow: hidden;
           }
           .inner-content {
             background: black;
-            border-radius: 8px; // Ensuring the inner content also has rounded corners
-            padding: 16px; // Adjusted padding for aesthetic balance
+            border-radius: 8px; // Ensuring inner content also has rounded corners
+            padding: 20px; // Increased inner padding for aesthetic balance
           }
         `}
       </style>
