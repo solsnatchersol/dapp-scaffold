@@ -33,16 +33,18 @@ export const HomeView: FC = ({ }) => {
         {`
           @keyframes pulseBorder {
             0%, 100% {
-              border-image: linear-gradient(to right, #9D50BB, #6E48AA) 1;
+              border-image: linear-gradient(to right, #9D50BB, #6E48AA) 1 / 1 / 0 stretch;
             }
             50% {
-              border-image: linear-gradient(to right, #B485B7, #8C6EA8) 1;
+              border-image: linear-gradient(to right, #B485B7, #8C6EA8) 1 / 1 / 0 stretch;
             }
           }
           .custom-gradient-border {
             animation: pulseBorder 2s infinite;
             border-image: linear-gradient(to right, #9D50BB, #6E48AA) 1;
             border-image-slice: 1;
+            border-radius: 8px; /* Ensuring the radius is applied */
+            overflow: hidden; /* Helps maintain the radius with border-image */
           }
         `}
       </style>
