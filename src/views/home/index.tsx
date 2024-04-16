@@ -35,15 +35,18 @@ return (
         </div>
         <div className="flex flex-col mt-2 w-full">
           <video
-            src="https://solsnatcher.xyz/wp-content/uploads/2024/01/SOLsnatcher.mp4#t=-1"
-            width="100%"
-            autoPlay
-            muted
-            loop
-          />
+  src="https://solsnatcher.xyz/wp-content/uploads/2024/01/SOLsnatcher.mp4#t=-1"
+  width="100%"
+  autoPlay
+  muted
+  loop
+  playsInline  // This is crucial for iOS devices
+  preload="auto"
+>
+</video>
         </div>
         <div className="flex flex-col mt-2 w-full">
-          <RequestAirdrop />
+          
           <CandyMint />
           <h4 className="text-2xl text-slate-300 mt-4 mb-2">
             {wallet && (
