@@ -43,7 +43,7 @@ return (
           />
         </div>
         <div className="flex flex-col mt-2 w-full">
-          
+          <RequestAirdrop />
           <CandyMint />
           <h4 className="text-2xl text-slate-300 mt-4 mb-2">
             {wallet && (
@@ -54,6 +54,9 @@ return (
             )}
           </h4>
         </div>
+      </div>
+      <div className="mt-4 flex justify-center w-full">
+        <img src="/collection.png" alt="Collection" />
       </div>
     </div>
   );
