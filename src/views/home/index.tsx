@@ -41,33 +41,33 @@ export const HomeView: FC = ({ }) => {
           }
           .custom-gradient-border {
             animation: pulseBorder 2s infinite;
-            padding: 4px;
-            border-radius: 8px; /* Ensuring the radius is applied */
-            overflow: hidden; /* Helps maintain the radius */
+            padding: 8px; // Increased padding for the border
+            border-radius: 8px;
+            overflow: hidden;
           }
           .inner-content {
             background: black;
             border-radius: 8px;
-            padding: 8px; /* Inner padding */
+            padding: 20px; // Increased padding inside the content area
           }
         `}
       </style>
       <div className="md:hero mx-auto p-4">
         <div className="custom-gradient-border">
-          <div className="inner-content">
-            <div className='mt-6'>
+          <div className="inner-content flex flex-col items-center">
+            <div className='mt-6 w-full flex justify-center'>
               <img src="/feedme.png" alt="Feed Me Logo" />
             </div>
-            <div className="flex flex-col mt-2">
+            <div className="flex flex-col mt-2 w-full">
               <video
-                src="https://solsnatcher.xyz/wp-content/uploads/2024/01/SOLsnatcher.mp4#t=-1"
+                src="/video.mp4"
                 width="100%"
                 autoPlay
                 muted
                 loop
               />
             </div>
-            <div className="flex flex-col mt-2">
+            <div className="flex flex-col mt-2 w-full">
               <RequestAirdrop />
               <CandyMint />
               <h4 className="text-2xl text-slate-300 mt-4 mb-2">
