@@ -51,6 +51,7 @@ export const HomeView: FC = ({ }) => {
         </div>
         <div className="flex flex-col mt-2">
           <RequestAirdrop />
+          <CandyMint />
           <h4 className="md:w-full text-2xl text-slate-300 my-2">
           {wallet &&
           <div className="flex flex-row justify-center">
