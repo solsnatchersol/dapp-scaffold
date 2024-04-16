@@ -59,6 +59,7 @@ export const HomeView: FC = ({ }) => {
                 SOL
               </div>
           </div>
+            <img src="collection.png"></img>
           }
           </h4>
         </div>
