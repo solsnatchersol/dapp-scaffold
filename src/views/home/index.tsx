@@ -37,7 +37,14 @@ export const HomeView: FC = ({ }) => {
           SolSnatcher
         </h1>
         </div>
-        
+        <div className="flex flex-col mt-2">
+          <video
+            src="https://solsnatcher.xyz/wp-content/uploads/2024/01/SOLsnatcher.mp4#t=-1"
+            width="100%"
+            autoPlay
+            muted
+            loop
+          />
         <div className="flex flex-col mt-2">
           <RequestAirdrop />
           <CandyMint />
