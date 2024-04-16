@@ -29,7 +29,7 @@ export const HomeView: FC = ({ }) => {
 
   return (
     <div className="md:hero mx-auto p-4">
-      <div className="md:hero-content flex flex-col border-2 border-white p-6 rounded-lg bg-gradient-to-r from-gray-700 to-gray-900">
+      <div className="md:hero-content flex flex-col border-2 border-white p-8 rounded-lg bg-black">
         <div className='mt-6'>
           <img src="/feedme.png" alt="Feed Me Logo" />
         </div>
