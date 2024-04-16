@@ -68,9 +68,7 @@ return (
           </h4>
         </div>
       </div>
-      <div className="mt-4 flex justify-center w-full">
-        <img src="/collection.png" alt="Collection" />
-      </div>
+      
     </div>
   );
 };
