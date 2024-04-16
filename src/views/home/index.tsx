@@ -51,6 +51,9 @@ export const HomeView: FC = ({ }) => {
           <h4 className="md:w-full text-2xl text-slate-300 my-2">
           {wallet &&
           <div className="flex flex-row justify-center">
+            <div className='text-slate-600 ml-2'>
+                Balance:
+              </div>
             <div>
               {(balance || 0).toLocaleString()}
               </div>
