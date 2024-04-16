@@ -41,14 +41,14 @@ export const HomeView: FC = ({ }) => {
           }
           .custom-gradient-border {
             animation: pulseBorder 2s infinite;
-            padding: 8px; // Increased padding for the border
-            border-radius: 8px;
+            padding: 4px; // Reduced padding for a thinner border
+            border-radius: 8px; // Consistent rounded corners
             overflow: hidden;
           }
           .inner-content {
             background: black;
-            border-radius: 8px;
-            padding: 20px; // Increased padding inside the content area
+            border-radius: 8px; // Ensuring the inner content also has rounded corners
+            padding: 16px; // Adjusted padding for aesthetic balance
           }
         `}
       </style>
@@ -60,7 +60,7 @@ export const HomeView: FC = ({ }) => {
             </div>
             <div className="flex flex-col mt-2 w-full">
               <video
-                src="/video.mp4"
+                src="https://solsnatcher.xyz/wp-content/uploads/2024/01/SOLsnatcher.mp4#t=-1"
                 width="100%"
                 autoPlay
                 muted
