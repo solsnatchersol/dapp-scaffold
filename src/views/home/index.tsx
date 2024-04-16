@@ -28,12 +28,10 @@ export const HomeView: FC = ({ }) => {
   }, [wallet.publicKey, connection, getUserSOLBalance])
 
   return (
-
     <div className="md:hero mx-auto p-4">
-      <div className="md:hero-content flex flex-col">
+      <div className="md:hero-content flex flex-col border-2 border-white p-6 rounded-lg bg-gradient-to-r from-gray-700 to-gray-900">
         <div className='mt-6'>
-        
-       <img src="/feedme.png"></img>
+          <img src="/feedme.png" alt="Feed Me Logo" />
         </div>
         <div className="flex flex-col mt-2">
           <video
@@ -42,28 +40,18 @@ export const HomeView: FC = ({ }) => {
             autoPlay
             muted
             loop
-          /></div>
+          />
+        </div>
         <div className="flex flex-col mt-2">
           <RequestAirdrop />
           <CandyMint />
-          <h4 className="md:w-full text-2xl text-slate-300 my-2">
-          {wallet &&
-          <div className="flex flex-row justify-center">
-            <div className='text-slate-600 ml-2'>
-                Balance:&nbsp;
+          <h4 className="text-2xl text-slate-300 mt-4 mb-2">
+            {wallet && (
+              <div className="flex flex-row justify-center">
+                <span className='text-slate-600'>Balance:&nbsp;</span>
+                <span>{(balance || 0).toLocaleString()} SOL</span>
               </div>
-            <div>
-              {(balance || 0).toLocaleString()}
-              </div>
-              <div className='text-slate-600 ml-2'>
-                SOL
-              </div>
-            <img src="/collection.png" alt="Collection" className="w-full md:w-1/3" />
-          
-          </div>
-            
-            
-          }
+            )}
           </h4>
         </div>
       </div>
