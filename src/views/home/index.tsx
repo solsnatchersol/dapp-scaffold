@@ -58,9 +58,9 @@ export const HomeView: FC = ({ }) => {
               <div className='text-slate-600 ml-2'>
                 SOL
               </div>
-            <div className="flex flex-row justify-center">
-            <div><img src="/collection.png"></img></div>
-            </div>
+            <div className="mt-4">
+                  <img src="/collection.png" alt="Collection" />
+                </div>
           
           </div>
             
