@@ -28,8 +28,13 @@ export const HomeView: FC = ({ }) => {
   }, [wallet.publicKey, connection, getUserSOLBalance])
 
 return (
-    <div className="md:hero mx-auto p-4">
-      <div className="md:hero-content flex flex-col border-2 border-white rounded-lg p-8 bg-black bg-opacity-50">
+    <div className="md:hero mx-auto p-4" style={{
+      overflowX: 'hidden', // Prevent horizontal scrolling due to overflow
+    }}>
+      <div className="md:hero-content flex flex-col border-2 border-white rounded-lg p-8 bg-black bg-opacity-50" style={{
+        maxWidth: '100vw', // Ensure that this div does not cause overflow
+        boxSizing: 'border-box' // Include padding and borders in the element's total width
+      }}>
         <div className='mt-6 w-full flex justify-center'>
           <img src="/feedme.png" alt="Feed Me Logo" />
         </div>
