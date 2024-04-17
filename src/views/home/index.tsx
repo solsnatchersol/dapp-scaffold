@@ -33,7 +33,12 @@ return (
     backgroundSize: 'cover', 
     backgroundPosition: 'center center', 
     backgroundBlendMode: 'overlay', 
-    backgroundColor: 'rgba(0,0,0,0.5)'  // This adds a black overlay at 50% opacity
+    backgroundColor: 'rgba(0,0,0,0.5)', // This adds a black overlay at 50% opacity
+    width: '100vw', // Ensure it covers the full width of the viewport
+    minHeight: '100vh', // Optionally, cover the full viewport height as well
+    position: 'absolute', // Make it cover the full screen regardless of other content
+    top: 0,
+    left: 0
   }}>
     <div className="md:hero-content flex flex-col border-2 border-white rounded-lg p-8 bg-black bg-opacity-50">
       <div className='mt-6 w-full flex justify-center'>
